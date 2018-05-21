@@ -8,8 +8,8 @@ package Lesson2SimpleCalculations;
 public class test1 {
     public static void main(String[] args) {
 
-        for (int i = 0; i < Integer.MAX_VALUE; i += 10000) {
+        int i = Integer.MAX_VALUE;
             System.out.println(" " + i);
-        }
+
     }
 }
