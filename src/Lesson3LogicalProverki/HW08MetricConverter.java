@@ -24,7 +24,6 @@ public class HW08MetricConverter {
         switch (inUnitDistance) {
             case "cm":
                 distance /= cm;
-                System.out.println("da");
                 break;
             case "mm":
                 distance /= mm;
