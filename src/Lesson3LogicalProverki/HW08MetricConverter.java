@@ -21,37 +21,53 @@ public class HW08MetricConverter {
         km = 0.001;
         ft = 3.2808399;
         yd = 1.0936133;
-        if (inUnitDistance.equals("cm")) {
-            distance /= cm;
-            System.out.println("da");
-        } else if (inUnitDistance.equals("mm")) {
-            distance /= mm;
-        } else if (inUnitDistance.equals("mi")) {
-            distance /= mi;
-        } else if (inUnitDistance.equals("in")) {
-            distance /= in;
-        } else if (inUnitDistance.equals("km")) {
-            distance /= km;
-        } else if (inUnitDistance.equals("ft")) {
-            distance /= ft;
-        } else if (inUnitDistance.equals("yd")) {
-            distance /= yd;
+        switch (inUnitDistance) {
+            case "cm":
+                distance /= cm;
+                System.out.println("da");
+                break;
+            case "mm":
+                distance /= mm;
+                break;
+            case "mi":
+                distance /= mi;
+                break;
+            case "in":
+                distance /= in;
+                break;
+            case "km":
+                distance /= km;
+                break;
+            case "ft":
+                distance /= ft;
+                break;
+            case "yd":
+                distance /= yd;
+                break;
         }
-        if (outUnitDistance.equals("cm")) {
-            distance *= cm;
-        } else if (outUnitDistance.equals("mm")) {
-            distance *= mm;
-        } else if (outUnitDistance.equals("mi")) {
-            distance *= mi;
-        } else if (outUnitDistance.equals("in")) {
-            distance *= in;
-        } else if (outUnitDistance.equals("km")) {
-            distance *= km;
-        } else if (outUnitDistance.equals("ft")) {
+        switch (outUnitDistance) {
+            case "cm":
+                distance *= cm;
+                break;
+            case "mm":
+                distance *= mm;
+                break;
+            case "mi":
+                distance *= mi;
+                break;
+            case "in":
+                distance *= in;
+                break;
+            case "km":
+                distance *= km;
+                break;
+            case "ft":
 
-            distance *= ft;
-        } else if (outUnitDistance.equals("yd")) {
-            distance *= yd;
+                distance *= ft;
+                break;
+            case "yd":
+                distance *= yd;
+                break;
         }
         System.out.printf("%.8f " + outUnitDistance, distance);
     }
