@@ -12,13 +12,13 @@ public class HW06BonusScore {
     public static void main(String[] args) {
         Scanner consoleInput = new Scanner(System.in);
         int points = Integer.parseInt(consoleInput.nextLine());
-        int bonus = 0;
+        Double bonus = 0.0;
         if (points <= 100) {
-            bonus = 5;
+            bonus = 5.0;
         } else if (points > 100 && points < 1000) {
-            points *= 0.2;
+            bonus = points * 0.2;
         } else if (points > 1000) {
-            points *= 0.1;
+            bonus = points * 0.1;
 
         }
         if (points % 2 == 0) {
