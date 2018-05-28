@@ -1,5 +1,7 @@
 package ProgrammingBasicsExam;
 
+import java.util.Scanner;
+
 /**
  * @author icyhoty2k
  */
@@ -8,14 +10,19 @@ package ProgrammingBasicsExam;
 public class test {
     public static void main(String[] args) {
 
-        Integer i = 5;
-        short sh = (short) 5;
-        int z = 1;
-        z = Integer.MAX_VALUE;
-        System.out.println(z);
-        System.out.println(Integer.MIN_VALUE);
-        System.out.println(Byte.MAX_VALUE);
-        System.out.println(Short.MAX_VALUE);
+        Scanner consoleInput = new Scanner(System.in);
+        int x = Integer.parseInt(consoleInput.nextLine());
+        switch (x) {
+            case 1: {
+                System.out.println("edno");
+                break;
+            }
+            case 2: {
+                System.out.println("dve");
+                break;
+            }
 
+
+        }
     }
 }
