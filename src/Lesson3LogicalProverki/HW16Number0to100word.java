@@ -15,87 +15,91 @@ public class HW16Number0to100word {
         if (number < 20) {
             switch (number) {
                 case 0: {
-                    System.out.println("zero");
+                    wordNum = "zero";
                     break;
                 }
                 case 1: {
-                    System.out.println("one");
+                    wordNum = "one";
                     break;
                 }
                 case 2: {
-                    System.out.println("two");
+                    wordNum = "two";
                     break;
                 }
                 case 3: {
-                    System.out.println("three");
+                    wordNum = "three";
                     break;
                 }
                 case 4: {
-                    System.out.println("four");
+                    wordNum = "four";
                     break;
                 }
                 case 5: {
-                    System.out.println("five");
+                    wordNum = "five";
                     break;
                 }
                 case 6: {
-                    System.out.println("six");
+                    wordNum = "six";
                     break;
                 }
                 case 7: {
-                    System.out.println("seven");
+                    wordNum = "seven";
                     break;
                 }
                 case 8: {
-                    System.out.println("eight");
+                    wordNum = "eight";
                     break;
                 }
                 case 9: {
-                    System.out.println("nine");
+                    wordNum = "nine";
                     break;
                 }
                 case 10: {
-                    System.out.println("ten");
+                    wordNum = "ten";
                     break;
                 }
                 case 11: {
-                    System.out.println("eleven");
+                    wordNum = "eleven";
                     break;
                 }
                 case 12: {
-                    System.out.println("twelve");
+                    wordNum = "twelve";
                     break;
                 }
                 case 13: {
-                    System.out.println("therteen");
+                    wordNum = "thirteen";
                     break;
                 }
                 case 14: {
-                    System.out.println("fourteen");
+                    wordNum = "fourteen";
                     break;
                 }
                 case 15: {
-                    System.out.println("fifteen");
+                    wordNum = "fifteen";
                     break;
                 }
                 case 16: {
-                    System.out.println("sixteen");
+                    wordNum = "sixteen";
                     break;
                 }
                 case 17: {
-                    System.out.println("seventeen");
+                    wordNum = "seventeen";
                     break;
                 }
                 case 18: {
-                    System.out.println("eighteen");
+                    wordNum = "eighteen";
                     break;
                 }
                 case 19: {
-                    System.out.println("nineteen");
+                    wordNum = "nineteen";
+                    break;
+                }
+                case 20: {
+                    wordNum = "twenty";
                     break;
                 }
                 default: {
-                    System.out.println("invalid number");
+                    wordNum = "invalid number";
                 }
             }
         } else if (number > 20) {
@@ -173,7 +177,7 @@ public class HW16Number0to100word {
                     break;
             }
         } else {
-            System.out.println("invalid number");
+            wordNum = "invalid number";
         }
         System.out.println(wordNum);
     }
