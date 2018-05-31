@@ -12,7 +12,8 @@ public class HW16Number0to100word {
         Scanner consoleInput = new Scanner(System.in);
         int number = Integer.parseInt(consoleInput.nextLine());
         String wordNum = "";
-        if (number < 20) {
+
+        if (number <= 20) {
             switch (number) {
                 case 0: {
                     wordNum = "zero";
@@ -176,9 +177,10 @@ public class HW16Number0to100word {
                     wordNum = wordNum + " nine";
                     break;
             }
-        } else {
+        } else if (number > 100) {
             wordNum = "invalid number";
         }
+
         System.out.println(wordNum);
     }
 }
