@@ -103,7 +103,7 @@ public class HW16Number0to100word {
                     wordNum = "invalid number";
                 }
             }
-        } else if (number > 20) {
+        } else if (number > 20 && number <= 100) {
             int tens = number / 10;
             switch (tens) {
                 case 20: {
