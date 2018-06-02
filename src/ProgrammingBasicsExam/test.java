@@ -6,7 +6,6 @@ import java.util.Scanner;
  * @author icyhoty2k
  */
 
-
 public class test {
     public static void main(String[] args) {
 
