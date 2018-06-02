@@ -14,26 +14,21 @@ public class HW04FruitOrVegetable {
     public static void main(String[] args) {
         Scanner consoleInput = new Scanner(System.in);
         String currentType = consoleInput.nextLine().toLowerCase();
-        switch (currentType) {
-            case "banana":
-            case "apple":
-            case "kiwi":
-            case "cherry":
-            case "lemon":
-            case "grapes": {
-                System.out.println("fruit");
-                break;
-            }
-            case "tomato":
-            case "cucumber":
-            case "pepper":
-            case "carrot": {
-                System.out.println("vegetable");
-                break;
-            }
-            default: {
-                System.out.println("unknown");
-            }
+        if (currentType.equals("banana") ||
+                currentType.equals("apple") ||
+                currentType.equals("kiwi") ||
+                currentType.equals("cherry") ||
+                currentType.equals("lemon") ||
+                currentType.equals("grapes")) {
+            System.out.println("fruit");
+        } else if (currentType.equals("tomato") ||
+                currentType.equals("cucumber") ||
+                currentType.equals("pepper") ||
+                currentType.equals("carrot")) {
+            System.out.println("vegetable");
+        } else {
+            System.out.println("unknown");
         }
     }
 }
+
