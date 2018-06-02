@@ -40,21 +40,27 @@ public class HW02SmallShop {
         }
 
         if (city.equals("plovdiv")) {
-            if (product.equals("coffee")) {
-                totalPrice = 0.4 * quantity;
-                System.out.println(totalPrice);
-            } else if (product.equals("water")) {
-                totalPrice = 0.7 * quantity;
-                System.out.println(totalPrice);
-            } else if (product.equals("beer")) {
-                totalPrice = 1.15 * quantity;
-                System.out.println(totalPrice);
-            } else if (product.equals("sweets")) {
-                totalPrice = 1.30 * quantity;
-                System.out.println(totalPrice);
-            } else if (product.equals("peanuts")) {
-                totalPrice = 1.50 * quantity;
-                System.out.println(totalPrice);
+            switch (product) {
+                case "coffee":
+                    totalPrice = 0.4 * quantity;
+                    System.out.println(totalPrice);
+                    break;
+                case "water":
+                    totalPrice = 0.7 * quantity;
+                    System.out.println(totalPrice);
+                    break;
+                case "beer":
+                    totalPrice = 1.15 * quantity;
+                    System.out.println(totalPrice);
+                    break;
+                case "sweets":
+                    totalPrice = 1.30 * quantity;
+                    System.out.println(totalPrice);
+                    break;
+                case "peanuts":
+                    totalPrice = 1.50 * quantity;
+                    System.out.println(totalPrice);
+                    break;
             }
         }
         if (city.equals("varna")) {
