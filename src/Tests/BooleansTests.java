@@ -1,4 +1,4 @@
-package ProgrammingBasicsExam;
+package Tests;
 
 /**
  * @author icyhoty2k
