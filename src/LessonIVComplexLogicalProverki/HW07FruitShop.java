@@ -94,10 +94,10 @@ public class HW07FruitShop {
             }
         }
         long endTime = System.nanoTime();
-        System.out.println("StartTime nanoSecs" + startTime);
-        System.out.println("EndTime nanoSecs" + endTime);
-        System.out.println("Speed with \"switch-case\" statement:" + (endTime - startTime));
-        if (fruitNotRecognised || weekDay && weekEnd) {
+//        System.out.println("StartTime nanoSecs" + startTime);
+//        System.out.println("EndTime nanoSecs" + endTime);
+//        System.out.println("Speed with \"switch-case\" statement:" + (endTime - startTime));
+        if (fruitNotRecognised || !(weekDay ^ weekEnd)) {
             System.out.println("error");
         }
     }
