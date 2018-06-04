@@ -18,16 +18,16 @@ public class HW13PointInTheFigure {
         h = Integer.parseInt(br.readLine());
         x = Integer.parseInt(br.readLine());
         y = Integer.parseInt(br.readLine());
-        if (y == 0 && x <= h * 3) {
-            boolean onBottomBorder = true;
-        } else if (x == 0 && y <= h) {
-            boolean onLeftBorder = true;
-        } else if (x == h * 3 && y <= h) {
-            boolean onRightBorder = true;
-
-        } else if (y == h * 4 && x >= h && x <= 2 * h) {
-            boolean onUpperBorder = true;
-
+        boolean insideHorizontalRect = (x > 0 && x < 3 * h && y > 0 && y < h);
+        boolean insideVerticalRect = (x > h && x < 2 * h && y > 0 && y < 4 * h);
+        boolean outsideHorizontalRect = (x < 0 || x > 3 * h || y < 0 || y > h);
+        boolean outsideVerticalRect = (x < h || x > 2 * h || y < 0 && y > 4 * h);
+        if (insideHorizontalRect || insideVerticalRect) {
+            System.out.println("inside");
+        } else if (outsideHorizontalRect || outsideVerticalRect) {
+            System.out.println("outside");
+        } else {
+            System.out.println("border");
         }
 
     }
