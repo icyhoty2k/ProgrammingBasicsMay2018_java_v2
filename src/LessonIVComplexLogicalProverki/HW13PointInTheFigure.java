@@ -24,7 +24,7 @@ public class HW13PointInTheFigure {
         boolean outsideVerticalRect = (x < h || x > 2 * h || y < 0 && y > 4 * h);
         if (insideHorizontalRect || insideVerticalRect) {
             System.out.println("inside");
-        } else if (outsideHorizontalRect || outsideVerticalRect) {
+        } else if (outsideHorizontalRect && outsideVerticalRect) {
             System.out.println("outside");
         } else {
             System.out.println("border");
