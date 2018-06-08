@@ -1,4 +1,4 @@
-package LessonIVComplexLogicalProverki;
+package Lesson4ComplexLogicalProverki;
 
 import java.util.Scanner;
 

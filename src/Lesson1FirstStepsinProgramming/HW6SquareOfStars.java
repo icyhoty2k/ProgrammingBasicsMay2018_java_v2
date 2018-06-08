@@ -1,4 +1,4 @@
-package Lesson4FirstStepsinProgramming;
+package Lesson1FirstStepsinProgramming;
 
 import java.util.Scanner;
 

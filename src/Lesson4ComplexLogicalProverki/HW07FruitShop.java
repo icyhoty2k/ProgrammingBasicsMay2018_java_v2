@@ -1,4 +1,4 @@
-package LessonIVComplexLogicalProverki;
+package Lesson4ComplexLogicalProverki;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
