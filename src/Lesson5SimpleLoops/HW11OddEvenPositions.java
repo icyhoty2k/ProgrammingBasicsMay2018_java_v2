@@ -1,5 +1,6 @@
 package Lesson5SimpleLoops;
 
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 /**
@@ -10,6 +11,7 @@ import java.util.Scanner;
 public class HW11OddEvenPositions {
     public static void main(String[] args) {
         Scanner consoleInput = new Scanner(System.in);
+        DecimalFormat fD = new DecimalFormat("#.################");
         int numbs = Integer.parseInt(consoleInput.nextLine());
         // pinpong - o for ODD ; e - for EVEN ;
         if (numbs == 0) {
@@ -22,7 +24,7 @@ public class HW11OddEvenPositions {
         if (numbs == 1) {
             double number = Double.parseDouble(consoleInput.nextLine());
             oddSum = oddMax = oddMin = number;
-            System.out.println("OddSum=" + oddSum + ",\nOddMin=" + oddMin + ",\nOddMax=" + oddMax + ",\nEvenSum=0,\nEvenMin=No,\nEvenMax=No");
+            System.out.println("OddSum=" + fD.format(oddSum) + ",\nOddMin=" + fD.format(oddMin) + ",\nOddMax=" + fD.format(oddMax) + ",\nEvenSum=0,\nEvenMin=No,\nEvenMax=No");
             return;
         }
         oddSum = evenSum = 0;
@@ -61,6 +63,6 @@ public class HW11OddEvenPositions {
             //jumping from odd to even PinPong-ing around;
             pinpong = (pinpong) ? false : true;
         }
-        System.out.println("OddSum=" + oddSum + ",\nOddMin=" + oddMin + ",\nOddMax=" + oddMax + ",\nEvenSum=" + evenSum + ",\nEvenMin=" + evenMin + ",\nEvenMax=" + evenMax);
+        System.out.println("OddSum=" + fD.format(oddSum) + ",\nOddMin=" + fD.format(oddMin) + ",\nOddMax=" + fD.format(oddMax) + ",\nEvenSum=" + fD.format(evenSum) + ",\nEvenMin=" + fD.format(evenMin) + ",\nEvenMax=" + fD.format(evenMax));
     }
 }
