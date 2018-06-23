@@ -1,5 +1,7 @@
 package Lesson6DrawingWithLoops;
-
+/**
+ * @author icyhoty2k
+ */
         import java.util.Scanner;
 
 public class HW06RhombusofStars {
